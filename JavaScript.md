@@ -50,6 +50,7 @@ replace(/,/g, "")
 ## **S_**
 
 (1) some()
+**DIFFERENCE** between **some()** and **** 
 ```js
 
 ```
