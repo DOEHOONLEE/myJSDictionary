@@ -2,7 +2,22 @@
 
 
 ## QUICK VIEW
-### methods 
+
+
+ #### convert to string  
+```js
+const val = 21 + ""; // -> "21"; typeof val -> "string";
+```
+
+ #### filter unique values
+```js
+const arr = [1, 2, 2, 4, 7, 2, 1];
+const uni = [...new Set(array)]; // -> uni = [1, 2, 4, 7];
+const unique = arr.filter((v, i, a) => a.indexOf(v) === i); // -> unique = [1, 2, 4, 7];
+```
+
+
+ #### methods 
 
 | methods | Description | Returns | Argument
 | --- | --- | --- | --- |
@@ -11,6 +26,10 @@
 | `includes()` | checks if the array has certain string | TRUE/FALSE | `string`
 | `filter()` | check for elements that pass the test | `new array` | 
 | `map()` | similar to filter(), but modifies items | `new array`| 
+
+
+ ### 
+
 
 ***
 ## **E_**
