@@ -1,5 +1,18 @@
 # myJSDictionary
 
+
+## QUICK TIPS
+methods
+```js
+every()
+```EVERY item has to pass the test - returns TRUE/FALSE  
+```js
+some()
+```if SOME item pass the test - returns TRUE/FALSE - argument is a ```function```  
+```js
+includes() 
+```checks if there is a certain/specific - returns TRUE/FALSE - argument is a ```string```    
+
 ## **E_**
 
 (1) every()
