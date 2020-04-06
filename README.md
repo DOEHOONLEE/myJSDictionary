@@ -1,7 +1,7 @@
 # myJSDictionary
 
 ## **E_**
-***
+
 (1) every()
 ```js
 // every() method goes through an array and returns TRUE if ALL items pass the test or FALSE if not.
@@ -16,9 +16,9 @@ IQ.every(intelligence => intelligence >= 75);
 // true
 ```
 
-
-## **F_**
 ***
+## **F_**
+
 (1) filter()
 ```js
 // filter() returns a new array with elements that pass the certain condition
@@ -31,24 +31,24 @@ filter_list function(l) {
 // ES6
 const filter_list = l => l.filter(c => (typeof c == "number"));
 ```
-
-## **P_**
 ***
+## **P_**
+
 (1) power a number
 ```js
 Math.pow(base, exponent)
 ```
-
-## **R_**
 ***
+## **R_**
+
 (1) replace()
 ```js
 // remove commas
 replace(/,/g, "")
 ```
-
-## **S_**
 ***
+## **S_**
+
 (1) some()
 ```js
 
