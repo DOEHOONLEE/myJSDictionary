@@ -1,18 +1,18 @@
 # myJSDictionary
 
 
-## QUICK TIPS
-methods
-```js
-every()
-```EVERY item has to pass the test - returns TRUE/FALSE  
-```js
-some()
-```if SOME item pass the test - returns TRUE/FALSE - argument is a ```function```  
-```js
-includes() 
-```checks if there is a certain/specific - returns TRUE/FALSE - argument is a ```string```    
+## QUICK VIEW
+### methods 
 
+| methods | Description | Returns | Argument
+| --- | --- | --- | --- |
+| `every()` | EVERY item has to pass the test | TRUE/FALSE | 
+| `some()` | SOME item has to pass the test | TRUE/FALSE | `function`
+| `includes()` | checks if the array has certain string | TRUE/FALSE | `string`
+| `filter()` | check for elements that pass the test | `new array` | 
+| `map()` | similar to filter(), but modifies items | `new array`| 
+
+***
 ## **E_**
 
 (1) every()
@@ -59,11 +59,31 @@ Math.pow(base, exponent)
 // remove commas
 replace(/,/g, "")
 ```
+
+(2) reverse()
+```js
+// this method reverses the order of elements in the array - original array affected
+const IQ = [99, 105, 138, 89];
+const.reverse(); // IQ = [89, 138, 105, 99];
+```
 ***
 ## **S_**
 
 (1) some()
-**DIFFERENCE** between **some()** and **** 
-```js
 
+```js
+// checks if some elements are in the array and returns TRUE/FALSE - similar to `incldues()`
+  // ex. var IQ = [99, 105, 138, 89]; or const IQ = [99, 105, 138, 89];
+const IQ = [99, 105, 138, 89];
+IQ.some(pass => pass > 100);
+// true
+```
+
+(2) sort()
+
+```js
+// sorts items in the array -> can be alphabetical or numerical + ascending/descending - original array affected
+const IQ = [99, 105, 138, 89];
+IQ.sort((a,b) => a-b); // 89, 99, 105, 138
+IQ.sort((a,b) => b-a); // 138, 105, 99, 89
 ```
