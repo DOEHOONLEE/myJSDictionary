@@ -130,10 +130,12 @@ const IQ = [99, 105, 138, 89];
 const.reverse(); // IQ = [89, 138, 105, 99];
 ```
 
- (3) remove last digit(s) + remove last letter(s)
+ (3) remove last digit(s) + remove last letter(s)/item(s)
 ```js
 const int = 4210 / 10 | 0; // -> 421
 const str = ("Hello World!").slice(0,-1); // -> "Hello World"
+const arr = [0, 2, 5, 4, 21, 7];
+arr.slice(-1); // -> [7];
 ```
 ***
 ## **S_**
