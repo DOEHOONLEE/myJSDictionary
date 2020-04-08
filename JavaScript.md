@@ -3,6 +3,15 @@
 
 ## QUICK VIEW
 
+ #### array manipulation
+```js
+// let arr1 = [1,3,4,5,7,9];
+// let arr2 = [2,5,6,7];
+let inter = arr1.filter(x => arr2.includes(x));
+let diff = arr1. filter(x => !arr2.includes(x));
+let union = [...arr1, ...arr2]; // [key=combine/union]
+```
+
 
  #### convert number to string  
 ```js
@@ -159,7 +168,7 @@ IQ.sort((a,b) => b-a); // 138, 105, 99, 89
  (3) spread operator (...)
  
  ```js
- // is used for copying/combining arrays, using math functions, etc.
+ // is used for copying/combining arrays, using math functions, etc. [key=combine/union]
  let str = "This is a string!!";
  let arr1 = ["David", "Doe", "Hoon", "LEE"];
  let arr2 = ["Rabbit", "King"];
