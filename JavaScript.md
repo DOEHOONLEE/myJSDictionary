@@ -9,6 +9,12 @@
 const val = 21 + ""; // -> "21"; typeof val -> "string";
 ```
 
+ #### convert string to number
+```js
+var int = "421";
+console.log(+int); // -> 421
+```
+
  #### filter unique values
 ```js
 const arr = [1, 2, 2, 4, 7, 2, 1];
@@ -66,15 +72,6 @@ const bubbleSort = arr => {
  return arr;
 }
 ```
-***
-## **C_**
-
- (1) convert string to number
-```js
-var int = "421";
-console.log(+int); // -> 421
-```
-
 ***
 ## **E_**
 
@@ -158,3 +155,18 @@ const IQ = [99, 105, 138, 89];
 IQ.sort((a,b) => a-b); // 89, 99, 105, 138
 IQ.sort((a,b) => b-a); // 138, 105, 99, 89
 ```
+
+ (3) spread operator (...)
+ 
+ ```js
+ // is used for copying/combining arrays, using math functions, etc.
+ let str = "This is a string!!";
+ let arr1 = ["David", "Doe", "Hoon", "LEE"];
+ let arr2 = ["Rabbit", "King"];
+ let num = [-1, 2, 4, 21, 7, 3];
+ 
+ console.log([...str]); // -> ["T", "h", "i", "s", " ", "i", "s", " ", "a", " ", "s", "t", "r", "i", "n", "g", "!", "!"];
+ console.log([...arr1, ...arr2]); // -> ["David", "Doe", "Hoon", "LEE", "Rabbit", "King"];
+ console.log(Math.max(...num)); // -> 21;
+ ```
+ ** Note : Math.max() & Math.min() cannot be used with an array **
