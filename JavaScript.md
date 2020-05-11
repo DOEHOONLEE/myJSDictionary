@@ -43,6 +43,21 @@ const unique = arr.filter((v, i, a) => a.indexOf(v) === i); // -> unique = [1, 2
 | `map()` | similar to filter(), but modifies items | `new array`| 
 
 
+#### reverse without reverse()
+```js
+let ans = "";
+for (let i=0; i<str.length;i++) {
+ const char = str[i];
+ ans = char + ans;
+}
+// or //
+return str.split("").reduce((output, char) => {
+ output = char + output;
+ return output;
+}, "");
+```
+
+
  ### 
 
 ***
