@@ -31,6 +31,16 @@ const uni = [...new Set(arr)]; // -> uni = [1, 2, 4, 7];
 const unique = arr.filter((v, i, a) => a.indexOf(v) === i); // -> unique = [1, 2, 4, 7];
 ```
 
+#### function within a function
+```js
+function power(base) {
+  return function(exp) {
+    return Math.pow(base, exp);
+  }
+}
+const powerOf = power(4);
+console.log(powerOf(3)) // -> 64
+```
 
  #### methods 
 
