@@ -55,6 +55,20 @@ return str.split("").reduce((output, char) => {
  output = char + output;
  return output;
 }, "");
+
+let str = "bbbaaabaaaoijeroajgalerifjaliohgailwuegha";
+
+function letCnter(str) {
+  let counter = {};
+  for (let i=0; i<str.length; i++) {
+    counter[str[i]] = counter[str[i]] + 1 || 1;
+  }
+  for (let i in counter) {
+    console.log("key -> " + i, "value -> " + counter[i]);
+  }
+  return counter;
+}
+
 ```
 
 
