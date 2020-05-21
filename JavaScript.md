@@ -143,6 +143,24 @@ filter_list function(l) {
 const filter_list = l => l.filter(c => (typeof c == "number"));
 ```
 ***
+## **O_**
+
+ (1) Object Constructor // a way to construct a new object
+ ```js
+ function Person(name, age) {
+   this.name = name;
+   this.age = age;
+ }
+ const p = new Person('David', 29);
+ const a = new Person('Cat', 35);
+ console.log(p); // Person {name: "David", age: 29}
+ console.log(a); // Person {name: "Cat", age: 35}
+ ```
+ 
+ **Note**
+ arrow function cannot have `this` in it
+
+***
 ## **P_**
 
  (1) power a number
